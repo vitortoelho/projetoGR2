@@ -1,0 +1,89 @@
+/* Static/css/home.modules.css */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.Header__home {
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #092c4c;
+}
+
+.Wellcome__home {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.Wellcome__home > h1 {
+    margin-left: 10px;
+}
+
+.Links__home > a {
+    color: #d8d8d8;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.Links__home > a:hover {
+    color: #ffffff;
+}
+
+.image__home {
+    width: 100px;
+}
+
+.container {
+    padding: 20px;
+    height: calc(100vh - 53.2px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eeeeee;
+}
+
+.Main__home, .Aside__home {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.Campo__home {
+    height: 70vh;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 22px;
+    border: none;
+    background-color: #cccccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 1px 40px #c2c2c2;
+}
+
+.Btn__home {
+    color: #fff;
+    height: 50px;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #092c4c;
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}

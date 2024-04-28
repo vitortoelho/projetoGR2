@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../../static/assets/images/icon.png">
+    <title>Grupo Real - Converta sua cotação!</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.modules.css' %}">
+</head>
+<body>
+    <header class="Header__home">
+        <div class="Wellcome__home">
+            <img src="../../static/assets/images/LogoReal.png" class="image__home">
+        </div>
+        <div class="Links__home">
+            {% if is_staff_or_superuser %}
+                <a href="{% url 'admin:index' %}">Página de Administração</a>
+            {% endif %}
+            <a href="{% url 'index' %}">sair</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="Main__home">
+            <textarea class="Campo__home" id="campoA"></textarea>
+            <button type="submit" class="Btn__home">CONVERTER</button>
+        </main>
+        <aside class="Aside__home">
+            <textarea class="Campo__home" id="campoB" disabled></textarea>
+            <button type="submit" class="Btn__home invisible"></button>
+        </aside>
+    </div>
+    <script src="{% static 'scripts/home.js' %}"></script>
+</body>
+</html>
